@@ -10,12 +10,12 @@ form.addEventListener('submit', function (e) { // aqui é para verificar um even
     const altura = Number(inputAltura.value);
 
     if (!peso) { // aqui é para verificar que o que for digitado sera um numero , caso nao , havera um retorno 
-        setResultado('Peso invalido', false);
+        setResultado('Peso inválido', false);
         return;
     }
 
     if (!altura) {
-        setResultado('Altura invalido', false);
+        setResultado('Altura inválida', false);
         return;
     }
     const imc = getImc(peso, altura);
@@ -31,7 +31,7 @@ function getImc(peso, altura) {
 }
 
 function getNivelImc(imc) {
-    const nivel = ['Abaixo do peso', 'Peso normal', 'Sobrepeso', 'Obesidade Grau 1', 'Obeisdade grau 2', 'Obesidade grau 3']; // aqui é para retornar  o valor do array usando o indice
+    const nivel = ['Abaixo do peso', 'Peso normal', 'Sobrepeso', 'Obesidade grau 1', 'Obeisdade grau 2', 'Obesidade grau 3']; // aqui é para retornar  o valor do array usando o indice
 
     if (imc >= 39.9) {
         return nivel[5];
