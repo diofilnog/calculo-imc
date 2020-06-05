@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap');
+:root{ /* para criar uyma variavel de cor*/
+   --primary-color: rgb(42, 84, 100);
+   --primary-color-darker: rgb(2, 21, 29);
+}
+*{
+    outline: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Tera', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+#lateral1{
+    width: 270px;
+	float: left;   
+}
+
+#lateral {
+    float: right;
+    padding: 0 50px 0 0 ;   
+}
+
+#container{
+    max-width: 640px;  
+    margin: 50px auto;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.paragrafo-resultado , .bad{
+    background-color:rgb(154, 235, 154) ;
+    padding: 10px 20px;
+}
+.bad{
+    background-color: rgb(233, 102, 102);
+}
+.limpar{
+    clear: both;
+}
+form input , form label , form button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+form input{
+    font: 24px;
+    height: 50px;
+    padding: 0 20 ;
+}
+
+form input:focus{ /* para a linha que clicar ficar selecionada*/
+    outline: 1px solid var(--primary-color); /* usando uma cor de variavel*/
+}
+
+form button{
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+
+}
+form button:hover{
+    background-color: var(--primary-color-darker);
+}
+
+form button:active{ /* u,a cor para o botao ao ser clicado*/
+    background-color: rgb(100, 14, 14);
+}
+
+p{   
+    margin:2px 0 2px 0;
+    
+}
+
+ p #lateral{
+    border-bottom: 1px solid red;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h3{
+   line-height: 30px; 
+   padding-top: 30px;   
+}
+
+.limpar{
+    clear: both;
+}
+
+
+
+
