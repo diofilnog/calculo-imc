@@ -1,6 +1,6 @@
 /* Exercicio clacular IMC*/
 
-const form = document.querySelector('#form');
+const form = document.querySelector('#form'); // para selecionar todos os form da pagina
 
 form.addEventListener('submit', function (e) { // aqui é para verificar um evento
     e.preventDefault(); // aqui para prevenir evento de enviar formulario 
@@ -56,7 +56,6 @@ function criaP() {
     //p.classList.add('paragrafo-resultado'); // aqui é para adicionar uma classe em JS , e essa classe pode ser usada no CSS
     return p; // sempre que usa o return; o codigo nao continua para os proximos codigo abaixo
 }
-
 function setResultado(msg, isValid) { // funcao para receber o resultado do input
     const resultado = document.querySelector('#resultado');
     resultado.innerHTML = '';
@@ -69,3 +68,4 @@ function setResultado(msg, isValid) { // funcao para receber o resultado do inpu
     p.innerHTML = msg; // aqui é para mostrar na tela o mensagem da funcao p
     resultado.appendChild(p);
 }
+
